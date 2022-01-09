@@ -1,0 +1,28 @@
+@import 'partials/partials';
+
+.hero {
+    background: #c4c4c4;
+    padding: toRem(220);
+}
+
+.hero-container {
+    margin: auto;
+    max-width: 996px;
+}
+
+.title-container,
+.sub-title-container {
+    text-align: center;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.primary-btn {
+    background-color: #fff;
+    border-radius: 100px;
+    display: inline-block;
+    margin: toRem(48) auto;
+    padding: toRem(12) toRem(60);
+}
