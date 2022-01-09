@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import footerStyles from '../../styles/Footer.module.scss';
 
 // Parts
 

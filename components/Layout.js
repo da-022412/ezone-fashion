@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import Head from 'next/head'
 
 import Footer from './Layout/Footer';
 import NavBar from './Layout/NavBar';
@@ -33,13 +34,18 @@ const links = [
 
 const Layout = ({ children }) => {
     return (
-        <Fragment>
-            <NavBar
-                links={links}
-            />
-            <Fragment>{children}</Fragment>
-            <Footer/>
-        </Fragment>
+        <>
+        <Head>
+            <title>E-Zone US</title>
+            <meta name="description" content="E-Zone US" />
+            <link rel="icon" href="/favicon.ico" />
+        </Head>   
+        <NavBar
+            links={links}
+        />
+        <Fragment>{children}</Fragment>
+        <Footer/>
+        </>
     );
 };
 
