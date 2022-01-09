@@ -35,16 +35,16 @@ const links = [
 const Layout = ({ children }) => {
     return (
         <>
-        <Head>
-            <title>E-Zone US</title>
-            <meta name="description" content="E-Zone US" />
-            <link rel="icon" href="/favicon.ico" />
-        </Head>   
-        <NavBar
-            links={links}
-        />
-        <Fragment>{children}</Fragment>
-        <Footer/>
+            <Head>
+                <title>E-Zone US</title>
+                <meta name="description" content="E-Zone US" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>   
+            <NavBar
+                links={links}
+            />
+            <Fragment>{children}</Fragment>
+            <Footer/>
         </>
     );
 };
