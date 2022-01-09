@@ -1,0 +1,11 @@
+@import 'partials/partials';
+
+.icons {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons-container {
+    padding: toRem(112) 0 toRem(64);
+}

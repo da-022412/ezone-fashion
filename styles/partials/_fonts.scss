@@ -53,6 +53,10 @@
     font-weight: 400;
 }
 
+.body-text {
+    line-height: toRem(36);
+}
+
 .link-text {
     color: inherit;
     font-size: toRem(20);

@@ -12,21 +12,21 @@ const Hero = () => {
                         <br />
                         Textile Exhibition
                     </h1>
+                    <p className={`${heroStyles['body-text']}`}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Mauris in massa id tortor vulputate sollicitudin.
+                        Vestibulum malesuada metus eros, at gravida quam
+                        hendrerit at. Aenean ut rhoncus sem, id efficitur leo.
+                    </p>
                 </div>
-            </div>
-            <div className={`${heroStyles['sub-title-container']}`}>
-                <p className={`${heroStyles['body-text']}`}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Mauris in massa id tortor vulputate sollicitudin. Vestibulum
-                    malesuada metus eros, at gravida quam hendrerit at. Aenean
-                    ut rhoncus sem, id efficitur leo.
-                </p>
-            </div>
-            <div className={`${heroStyles['btn-container']}`}>
-                <div className={`${heroStyles['primary-btn']}`}>
-                    <Link href='#'>
-                        <a className={`${heroStyles['link-text']}`}>Register</a>
-                    </Link>
+                <div className={`${heroStyles['btn-container']}`}>
+                    <div className={`${heroStyles['primary-btn']}`}>
+                        <Link href='#'>
+                            <a className={`${heroStyles['link-text']}`}>
+                                Register
+                            </a>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </section>

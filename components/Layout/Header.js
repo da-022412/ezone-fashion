@@ -10,13 +10,13 @@ const Header = ({ links }) => {
     return (
         <header className={headerStyles.header}>
             <div className={`${headerStyles['header-container']}`}>
-                <div className={headerStyles.logo}>
+                <figure className={headerStyles.logo}>
                     <Link href='/'>
                         <a>
                             <Image src={Logo} width={120} height={60} />
                         </a>
                     </Link>
-                </div>
+                </figure>
                 <Nav links={links} />
             </div>
         </header>
