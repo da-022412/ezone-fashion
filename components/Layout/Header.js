@@ -13,11 +13,7 @@ const Header = ({ links }) => {
                 <div className={headerStyles.logo}>
                     <Link href='/'>
                         <a>
-                            <Image
-                                src={Logo}
-                                width={120}
-                                height={60}
-                            />
+                            <Image src={Logo} width={120} height={60} />
                         </a>
                     </Link>
                 </div>

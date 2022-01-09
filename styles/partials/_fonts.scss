@@ -48,13 +48,14 @@
 }
 
 .heading-5,
-.body-text,
-.link-text {
+.body-text {
     font-size: toRem(20);
     font-weight: 400;
 }
 
 .link-text {
     color: inherit;
+    font-size: toRem(20);
+    font-weight: 600;
     text-decoration: none;
 }

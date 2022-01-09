@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import Head from 'next/head'
+import Head from 'next/head';
 
 import Footer from './Layout/Footer';
 import Header from './Layout/Header';
@@ -17,8 +17,8 @@ const links = [
     },
     {
         id: 2,
-        title: 'Manufactures List',
-        slug: '#manufactures-list',
+        title: 'Manufacturers List',
+        slug: '#manufacturers-list',
     },
     {
         id: 3,
@@ -37,14 +37,12 @@ const Layout = ({ children }) => {
         <>
             <Head>
                 <title>E-Zone US</title>
-                <meta name="description" content="E-Zone US" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>   
-            <Header
-                links={links}
-            />
+                <meta name='description' content='E-Zone US' />
+                <link rel='icon' href='/favicon.ico' />
+            </Head>
+            <Header links={links} />
             <Fragment>{children}</Fragment>
-            <Footer/>
+            <Footer />
         </>
     );
 };

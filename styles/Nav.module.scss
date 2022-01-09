@@ -11,6 +11,10 @@
     margin: 0 toRem(12);
 
     &:last-child {
+        border: 1px solid #000;
+        border-radius: 100px;
+        box-sizing: border-box;
         margin: 0 0 0 toRem(12);
+        padding: toRem(8) toRem(24);
     }
 }
