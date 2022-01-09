@@ -1,0 +1,16 @@
+@import 'partials/partials';
+
+.nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-container {
+    box-sizing: border-box;
+    margin: 0 toRem(12);
+
+    &:last-child {
+        margin: 0 0 0 toRem(12);
+    }
+}

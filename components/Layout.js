@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import Head from 'next/head'
 
 import Footer from './Layout/Footer';
-import NavBar from './Layout/NavBar';
+import Header from './Layout/Header';
 
 const links = [
     {
@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
                 <meta name="description" content="E-Zone US" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>   
-            <NavBar
+            <Header
                 links={links}
             />
             <Fragment>{children}</Fragment>

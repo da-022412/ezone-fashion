@@ -1,0 +1,11 @@
+@import 'partials/partials';
+
+.header-container {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: $site-width;
+    padding: toRem(60) toRem(8);
+}
