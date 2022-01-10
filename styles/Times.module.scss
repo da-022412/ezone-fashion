@@ -1,0 +1,13 @@
+@import 'partials/partials';
+
+.times-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.time-container {
+    background-color: #fff;
+    border-radius: 100px;
+    padding: toRem(100) toRem(40);
+}

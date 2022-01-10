@@ -1,0 +1,13 @@
+@import 'partials/partials';
+
+.schedule-section {
+    background-color: #f3f3f3;
+    padding: toRem(72) 0;
+}
+
+.schedule-container {
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+    width: $container-width;
+}
