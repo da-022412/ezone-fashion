@@ -38,7 +38,7 @@ const icons = [
         title: 'Shoes',
     },
     {
-        id: 3,
+        id: 4,
         img: Backpack,
         width: 88,
         height: 88,

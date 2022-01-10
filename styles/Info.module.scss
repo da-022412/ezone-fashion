@@ -1,20 +1,13 @@
 @import 'partials/partials';
 
 .info-section {
-    padding: toRem(144);
+    background-color: #f3f3f3;
+    padding: toRem(72) 0;
 }
 
 .info-container {
+    box-sizing: border-box;
     margin: auto;
     max-width: $container-width;
     text-align: center;
-}
-
-.secondary-btn {
-    background-color: #000;
-    border-radius: 100px;
-    color: #fff;
-    display: inline-block;
-    margin: toRem(48) auto;
-    padding: toRem(12) toRem(60);
 }
