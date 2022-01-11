@@ -41,6 +41,10 @@
 .heading-1,
 .heading-2 {
     font-size: toRem(60);
+
+    @include md {
+        font-size: toRem(36);
+    }
 }
 
 .heading-3 {
@@ -51,6 +55,10 @@
 .body-text {
     font-size: toRem(20);
     font-weight: 400;
+
+    @include md {
+        margin: 0;
+    }
 }
 
 .body-text {

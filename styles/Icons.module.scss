@@ -4,8 +4,27 @@
     align-items: flex-end;
     display: flex;
     justify-content: space-between;
+
+    @include md {
+        flex-wrap: wrap;
+    }
 }
 
 .icons-container {
     padding: toRem(112) 0 toRem(64);
+
+    @include md {
+        border: 1px solid #000;
+        border-radius: 26px;
+        box-sizing: border-box;
+        margin: toRem(8);
+        padding: toRem(32) toRem(20);
+        width: calc(50% - toRem(16));
+    }
+}
+
+.icon-container {
+    @include md {
+        margin: toRem(16);
+    }
 }

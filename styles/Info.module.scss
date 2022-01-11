@@ -3,6 +3,14 @@
 .info-section {
     background-color: #f3f3f3;
     padding: toRem(72) 0;
+
+    @include md {
+        padding: toRem(100) toRem(48);
+    }
+
+    @include sm {
+        padding: toRem(100) toRem(20);
+    }
 }
 
 .info-container {

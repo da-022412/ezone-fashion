@@ -3,6 +3,14 @@
 .hero {
     background: #c4c4c4;
     padding: toRem(220);
+
+    @include md {
+        padding: toRem(100) toRem(48);
+    }
+
+    @include sm {
+        padding: toRem(100) toRem(20);
+    }
 }
 
 .hero-container {
