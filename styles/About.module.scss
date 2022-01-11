@@ -1,0 +1,18 @@
+@import 'partials/partials';
+
+.about-section {
+    background-color: #f3f3f3;
+    padding: toRem(72) 0;
+}
+
+.about-container {
+    box-sizing: border-box;
+    margin: auto;
+    max-width: $site-width;
+    text-align: center;
+}
+
+.title-container {
+    margin: auto;
+    max-width: $container-width;
+}

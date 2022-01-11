@@ -1,0 +1,32 @@
+@import 'partials/partials';
+
+.cards {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin: toRem(72) auto;
+}
+
+.cards-container {
+    background: url('../assets/images/cards-abstract-bg.jpg');
+    border-radius: 100px;
+    box-sizing: border-box;
+    width: 33.333%;
+
+    &:first-of-type {
+        margin-right: toRem(72);
+    }
+
+    &:last-of-type {
+        margin-left: toRem(72);
+    }
+}
+
+.card-container {
+    background-color: #fff;
+    border-radius: 100px;
+    box-sizing: border-box;
+    min-height: 600px;
+    padding: toRem(100) toRem(40);
+    transform: translate(20px, -20px);
+}
