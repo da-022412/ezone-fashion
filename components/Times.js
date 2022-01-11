@@ -39,15 +39,18 @@ const china = [
 const Times = () => {
     return (
         <div className={`${timesStyles['times-container']}`}>
-            <div className={`${timesStyles['time-container']}`}>
-                <div className={`${timesStyles['title-container']}`}>
-                    <h3 className={`${timesStyles['heading-3']}`}>
-                        Eastern Standard Time
-                    </h3>
-                </div>
-                {eastern.map((x) => (
-                    <div className={`${timesStyles['time-list']}`} key={x.id}>
-                        <div className={timesStyles.time}>
+            <div className={timesStyles.time}>
+                <div className={`${timesStyles['time-container']}`}>
+                    <div className={`${timesStyles['title-container']}`}>
+                        <h3 className={`${timesStyles['heading-3']}`}>
+                            Eastern Standard Time
+                        </h3>
+                    </div>
+                    {eastern.map((x) => (
+                        <div
+                            className={`${timesStyles['time-list']}`}
+                            key={x.id}
+                        >
                             <span className={`${timesStyles['body-text']}`}>
                                 {x.date}
                             </span>
@@ -55,18 +58,21 @@ const Times = () => {
                                 {x.content}
                             </span>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
-            <div className={`${timesStyles['time-container']}`}>
-                <div className={`${timesStyles['title-container']}`}>
-                    <h3 className={`${timesStyles['heading-3']}`}>
-                        China Standard Time
-                    </h3>
-                </div>
-                {china.map((x) => (
-                    <div className={`${timesStyles['time-list']}`} key={x.id}>
-                        <div className={timesStyles.time}>
+            <div className={timesStyles.time}>
+                <div className={`${timesStyles['time-container']}`}>
+                    <div className={`${timesStyles['title-container']}`}>
+                        <h3 className={`${timesStyles['heading-3']}`}>
+                            China Standard Time
+                        </h3>
+                    </div>
+                    {china.map((x) => (
+                        <div
+                            className={`${timesStyles['time-list']}`}
+                            key={x.id}
+                        >
                             <span className={`${timesStyles['body-text']}`}>
                                 {x.date}
                             </span>
@@ -74,8 +80,8 @@ const Times = () => {
                                 {x.content}
                             </span>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     );

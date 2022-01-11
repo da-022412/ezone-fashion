@@ -10,4 +10,16 @@
     background-color: #fff;
     border-radius: 100px;
     padding: toRem(100) toRem(40);
+    transform: translate(20px, -20px);
+}
+
+.time {
+    background: url('../assets/images/times-abstract-bg.png');
+    border-radius: 100px;
+}
+
+.time-list {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
