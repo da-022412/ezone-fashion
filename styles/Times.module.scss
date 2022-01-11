@@ -4,6 +4,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
+    margin: toRem(72) auto;
 }
 
 .time-container {
@@ -14,8 +15,18 @@
 }
 
 .time {
-    background: url('../assets/images/times-abstract-bg.png');
+    background: url('../assets/images/times-abstract-bg.jpg');
     border-radius: 100px;
+    box-sizing: border-box;
+    width: 50%;
+
+    &:first-of-type {
+        margin-right: toRem(36);
+    }
+
+    &:last-of-type {
+        margin-left: toRem(36);
+    }
 }
 
 .time-list {
