@@ -1,42 +1,6 @@
 import timesStyles from '../styles/Times.module.scss';
 
-const eastern = [
-    {
-        id: 0,
-        date: '02/22/22',
-        content: '08:30 am - 17:30 pm',
-    },
-    {
-        id: 1,
-        date: '02/22/22',
-        content: '08:30 am - 17:30 pm',
-    },
-    {
-        id: 2,
-        date: '02/22/22',
-        content: '08:30 am - 17:30 pm',
-    },
-];
-
-const china = [
-    {
-        id: 0,
-        date: '02/22/22',
-        content: '08:30 am - 17:30 pm',
-    },
-    {
-        id: 1,
-        date: '02/22/22',
-        content: '08:30 am - 17:30 pm',
-    },
-    {
-        id: 2,
-        date: '02/22/22',
-        content: '08:30 am - 17:30 pm',
-    },
-];
-
-const Times = () => {
+const Times = ({ eastern, china }) => {
     return (
         <div className={`${timesStyles['times-container']}`}>
             <div className={timesStyles.time}>

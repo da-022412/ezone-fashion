@@ -27,6 +27,10 @@
     &:last-of-type {
         margin-left: toRem(36);
     }
+
+    @include md {
+        width: 90%;
+    }
 }
 
 .time-list {
