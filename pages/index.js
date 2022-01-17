@@ -6,10 +6,15 @@ import About from '../components/About';
 export default function Home() {
     return (
         <>
-            <Hero />
-            <Information />
+            <style global jsx>{`
+                body,
+                html {
+                    margin: 0;
+                    min-height: 100vh;
+                    padding: 0;
+                }
+            `}</style>
             <Schedule />
-            <About />
         </>
     );
 }
