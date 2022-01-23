@@ -72,7 +72,9 @@ const Schedule = () => {
     const isBreakpoint = useMediaQuery(980);
     return (
         <section className={`${scheduleStyles['schedule-section']}`}>
-            <div className={`${scheduleStyles['schedule-container']}`}>
+            <div
+                className={`${scheduleStyles['schedule-container']} ${scheduleStyles['text-center']}`}
+            >
                 <div className={`${scheduleStyles['title-container']}`}>
                     <h2 className={`${scheduleStyles['heading-2']}`}>
                         Event Schedule

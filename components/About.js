@@ -7,7 +7,9 @@ import aboutStyles from '../styles/about.module.scss';
 const About = () => {
     return (
         <main className={`${aboutStyles['about-section']}`}>
-            <div className={`${aboutStyles['about-container']}`}>
+            <div
+                className={`${aboutStyles['about-container']} ${aboutStyles['text-center']}`}
+            >
                 <div className={`${aboutStyles['title-container']}`}>
                     <h2 className={`${aboutStyles['heading-2']}`}>
                         Lorem ipsum
