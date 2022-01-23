@@ -1,8 +1,9 @@
 @import 'partials/partials';
 
 .info-section {
-    background-color: #f3f3f3;
-    padding: toRem(72) 0;
+    background-color: #000;
+    color: #fff;
+    padding: 0 0 toRem(72);
 
     @include md {
         padding: toRem(100) toRem(48);
