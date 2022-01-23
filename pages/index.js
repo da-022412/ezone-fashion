@@ -1,4 +1,5 @@
 import Hero from '../components/Hero';
+import Countdown from '../components/Countdown';
 import Information from '../components/Information';
 import Schedule from '../components/Schedule';
 import About from '../components/About';
@@ -14,7 +15,11 @@ export default function Home() {
                     padding: 0;
                 }
             `}</style>
+            <Hero />
+            <Countdown />
+            <Information />
             <Schedule />
+            <About />
         </>
     );
 }
