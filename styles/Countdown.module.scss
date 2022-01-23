@@ -1,0 +1,22 @@
+@import 'partials/partials';
+
+.countdown-section {
+    background-color: #000;
+}
+
+.countdown-wrap {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: toRem(32) toRem(60);
+    transform: translate(0, -50%);
+    width: $container-width;
+}
+
+.timer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: toRem(50);
+}
