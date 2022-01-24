@@ -2,7 +2,6 @@ import Hero from '../components/Hero';
 import Countdown from '../components/Countdown';
 import Information from '../components/Information';
 import Schedule from '../components/Schedule';
-import About from '../components/About';
 
 export default function Home() {
     return (
@@ -16,6 +15,9 @@ export default function Home() {
                 }
             `}</style>
             <Hero />
+            <Countdown />
+            <Information />
+            <Schedule />
         </>
     );
 }
