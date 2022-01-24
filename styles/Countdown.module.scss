@@ -27,6 +27,22 @@
 .timer {
     font-family: 'Montserrat', sans-serif;
     font-size: toRem(50);
+    position: relative;
+
+    &:after {
+        content: ':';
+        position: absolute;
+        right: -100%;
+        top: 50%;
+
+        @include md {
+            right: -60%;
+        }
+    }
+
+    &:last-child:after {
+        content: '';
+    }
 
     @include md {
         font-size: toRem(24);
