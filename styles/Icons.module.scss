@@ -24,6 +24,10 @@
 }
 
 .icon-container {
+    & img {
+        filter: invert(1);
+    }
+
     @include md {
         margin: toRem(16);
     }
