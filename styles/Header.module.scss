@@ -15,4 +15,13 @@
     margin: auto;
     max-width: $site-width;
     padding: toRem(60) toRem(8);
+
+    @include md {
+        padding: toRem(12) toRem(8);
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+    }
 }

@@ -19,4 +19,8 @@
 .timer {
     font-family: 'Montserrat', sans-serif;
     font-size: toRem(50);
+
+    @include md {
+        font-size: toRem(24);
+    }
 }

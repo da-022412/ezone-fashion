@@ -1,8 +1,35 @@
-import { Fragment } from 'react';
+import { Fragment, useState, useCallback, useEffect } from 'react';
 import Head from 'next/head';
 
 import Footer from './Layout/Footer';
 import Header from './Layout/Header';
+import MobileHeader from './Layout/MobileHeader';
+
+const useMediaQuery = (width) => {
+    const [targetReached, setTargetReached] = useState(false);
+
+    const updateTarget = useCallback((e) => {
+        if (e.matches) {
+            setTargetReached(true);
+        } else {
+            setTargetReached(false);
+        }
+    }, []);
+
+    useEffect(() => {
+        const media = window.matchMedia(`(max-width: ${width}px)`);
+        media.addListener(updateTarget);
+
+        // Check on mount (callback is not called until a change occurs)
+        if (media.matches) {
+            setTargetReached(true);
+        }
+
+        return () => media.removeListener(updateTarget);
+    }, []);
+
+    return targetReached;
+};
 
 const links = [
     {
@@ -33,6 +60,7 @@ const links = [
 ];
 
 const Layout = ({ children }) => {
+    const isBreakpoint = useMediaQuery(980);
     return (
         <>
             <Head>
@@ -40,7 +68,11 @@ const Layout = ({ children }) => {
                 <meta name='description' content='E-Zone US' />
                 <link rel='icon' href='/favicon.ico' />
             </Head>
-            <Header links={links} />
+            {isBreakpoint ? (
+                <MobileHeader links={links} />
+            ) : (
+                <Header links={links} />
+            )}
             <Fragment>{children}</Fragment>
             <Footer />
         </>

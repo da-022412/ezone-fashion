@@ -16,10 +16,6 @@ export default function Home() {
                 }
             `}</style>
             <Hero />
-            <Countdown />
-            <Information />
-            <Schedule />
-            <About />
         </>
     );
 }

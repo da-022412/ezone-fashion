@@ -16,5 +16,34 @@
         box-sizing: border-box;
         margin: 0 0 0 toRem(12);
         padding: toRem(8) toRem(24);
+
+        @include md {
+            position: fixed;
+            bottom: toRem(32);
+            left: toRem(16);
+            margin: 0;
+            text-align: center;
+            width: 90%;
+            z-index: 99;
+        }
+    }
+}
+
+.mobile-nav {
+    display: none;
+
+    & .link-container {
+        margin-bottom: toRem(32);
+    }
+
+    @include md {
+        background-color: #c4c4c4;
+        height: 100%;
+        left: 0;
+        padding-top: toRem(120);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9;
     }
 }
