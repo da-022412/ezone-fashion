@@ -2,7 +2,6 @@ import Hero from '../components/Hero';
 import Countdown from '../components/Countdown';
 import Information from '../components/Information';
 import Schedule from '../components/Schedule';
-import Configuration from '../components/Configuration';
 
 export default function Home() {
     return (
@@ -15,7 +14,6 @@ export default function Home() {
                     padding: 0;
                 }
             `}</style>
-            <Configuration />
             <Hero />
             <Countdown />
             <Information />
