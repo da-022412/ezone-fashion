@@ -6,9 +6,9 @@ SwiperCore.use([Pagination]);
 
 import 'swiper/css';
 import 'swiper/css/pagination';
-import cardStyles from '../../styles/Cards.module.scss';
+import cardStyles from './Cards.module.scss';
 
-const MobileCards = ({ cards }) => {
+const MobileCards = ({ items }) => {
     return (
         <Swiper
             pagination={true}
@@ -34,15 +34,15 @@ const MobileCards = ({ cards }) => {
                 }
             `}</style>
             <div className={cardStyles.cards}>
-                {cards.map((x) => (
-                    <SwiperSlide key={x.id}>
+                {items.map(({ title, copy }, index) => (
+                    <SwiperSlide key={index}>
                         <div className={`${cardStyles['cards-container']}`}>
                             <div className={`${cardStyles['card-container']}`}>
                                 <h3 className={`${cardStyles['heading-3']}`}>
-                                    {x.title}
+                                    {title}
                                 </h3>
                                 <p className={`${cardStyles['body-text']}`}>
-                                    {x.copy}
+                                    {copy}
                                 </p>
                             </div>
                         </div>
