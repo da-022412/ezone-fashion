@@ -1,0 +1,16 @@
+@import 'partials/partials';
+
+.schedule-section {
+    padding: toRem(72) 0;
+
+    @include md {
+        padding: toRem(48) toRem(0);
+    }
+}
+
+.schedule-container {
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 90%;
+    width: $site-width;
+}

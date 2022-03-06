@@ -1,0 +1,59 @@
+@import 'partials/partials';
+
+.featured-section {
+    color: #fff;
+    margin-top: -7.5%;
+
+    @include md {
+        margin: toRem(32) auto;
+    }
+}
+
+.featured-container {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 90%;
+    width: $site-width;
+}
+
+.featured {
+    border-radius: 70px;
+    box-sizing: border-box;
+    margin: auto;
+    min-height: 340px;
+    padding: toRem(240) toRem(32) 0;
+    width: calc(25% - toRem(20));
+
+    @include md {
+        margin-bottom: toRem(40);
+        width: calc(50% - toRem(20));
+    }
+
+    @include sm {
+        width: calc(100% - toRem(16));
+    }
+
+    &:nth-child(1) {
+        background: url('../assets/images/purse-pant-suit.jpg') center
+            center/cover;
+    }
+
+    &:nth-child(2) {
+        background: url('../assets/images/putting-on-jacket.jpg') center
+            center/cover;
+    }
+
+    &:nth-child(3) {
+        background: url('../assets/images/model-with-jewelry.jpg') center
+            center/cover;
+    }
+
+    &:nth-child(4) {
+        background: url('../assets/images/sitting-on-boardwalk.jpg') center
+            center/cover;
+    }
+}

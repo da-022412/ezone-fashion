@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: url('../../assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    src: url('../../assets/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    src: url('../../assets/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-5,
+.heading-6,
+.body-text,
+.link-text {
+    font-family: 'Montserrat', sans-serif;
+    margin-block-start: 0;
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-6 {
+    font-weight: 600;
+}
+
+.heading-1,
+.heading-2 {
+    font-size: toRem(60);
+
+    @include md {
+        font-size: toRem(36);
+    }
+}
+
+.heading-3 {
+    font-size: toRem(32);
+
+    @include md {
+        font-size: toRem(20);
+    }
+}
+
+.heading-4 {
+    font-size: toRem(24);
+
+    @include md {
+        font-size: toRem(18);
+    }
+}
+
+.heading-5 {
+    font-size: toRem(20);
+    font-weight: 500;
+
+    @include md {
+        font-size: toRem(12);
+    }
+}
+
+.heading-6 {
+    font-size: toRem(12);
+    text-transform: uppercase;
+}
+
+.body-text {
+    font-size: toRem(20);
+    font-weight: 400;
+    line-height: toRem(36);
+
+    @include md {
+        font-size: toRem(16);
+        margin: 0;
+    }
+}
+
+.link-text {
+    color: inherit;
+    font-size: toRem(20);
+    font-weight: 600;
+    text-decoration: none;
+
+    @include md {
+        font-size: toRem(16);
+    }
+}
+
+.text-center {
+    text-align: center;
+}

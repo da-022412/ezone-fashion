@@ -1,0 +1,21 @@
+.btn-container {
+    text-align: center;
+}
+
+.primary-btn,
+.secondary-btn {
+    border-radius: 100px;
+    display: inline-block;
+    margin: toRem(16) auto;
+    padding: toRem(12) toRem(60);
+}
+
+.primary-btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.secondary-btn {
+    background-color: #fff;
+    color: #000;
+}

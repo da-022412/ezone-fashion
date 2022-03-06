@@ -1,0 +1,44 @@
+@import 'partials/partials';
+
+.accordion-container {
+    box-sizing: border-box;
+    margin: toRem(100) auto;
+    max-width: 90%;
+    width: $site-width;
+}
+
+.accordion-title {
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .heading-2 {
+        margin: toRem(40) 0;
+    }
+}
+
+.panel {
+    margin: toRem(40) 0;
+}
+
+.panel-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+
+    @include lg {
+        width: 80%;
+    }
+
+    @include sm {
+        width: 100%;
+
+        p:last-child {
+            display: none;
+        }
+    }
+}

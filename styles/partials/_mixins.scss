@@ -1,0 +1,25 @@
+$screen-sm: 767px;
+$screen-md: 980px;
+$screen-lg: 1200px;
+
+@mixin lg {
+    @media (max-width: $screen-lg) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: $screen-md) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (max-width: $screen-sm) {
+        @content;
+    }
+}
+
+@function toRem($base-size: 16, $default-size: 16) {
+    @return #{calc($base-size / $default-size)}rem;
+}
