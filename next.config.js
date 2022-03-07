@@ -7,4 +7,13 @@ module.exports = {
         clientSecrete: '',
         apiKey: 'AIzaSyBW1F1PM2l2ZR9SDOAAhcKa22qH83a3jdA',
     },
+    async redirects() {
+        return [
+            {
+                source: '/',
+                destination: '/textile',
+                permanent: true,
+            },
+        ];
+    },
 };
