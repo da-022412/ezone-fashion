@@ -25,19 +25,13 @@
     overflow: hidden;
 
     @include sm {
-        height: 2400px;
+        height: 2600px;
         margin-top: -180px;
     }
 }
 
-@media(max-width: 490px){
+@media(max-width: 400px){
     .registration-form {
-        height: 2500px;
-    }
-}
-
-@media(max-width: 385px){
-    .registration-form {
-        height: 2600px;
+        height: 2700px;
     }
 }

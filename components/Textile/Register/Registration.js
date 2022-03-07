@@ -6,7 +6,7 @@ const Registration = () => {
             <iframe
                 className={`${registerStyles['registration-form']}`}
                 frameBorder='0'
-                height='2400px'
+                height='2500px'
                 scrolling='no'
                 src='https://www.ezone-us.com/en/registration-form'
                 width='100%'
