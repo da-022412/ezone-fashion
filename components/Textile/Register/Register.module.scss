@@ -1,4 +1,4 @@
-@import 'partials/partials';
+@import '../../../styles/partials/partials';
 
 .register-section {
     padding: toRem(72) 0;
@@ -25,13 +25,19 @@
     overflow: hidden;
 
     @include sm {
-        height: 2700px;
+        height: 2400px;
         margin-top: -180px;
     }
 }
 
-@media(max-width: 360px){
+@media(max-width: 490px){
     .registration-form {
-        height: 3100px;
+        height: 2500px;
+    }
+}
+
+@media(max-width: 385px){
+    .registration-form {
+        height: 2600px;
     }
 }

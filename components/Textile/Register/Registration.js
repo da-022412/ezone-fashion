@@ -1,4 +1,4 @@
-import registerStyles from '../../styles/Register.module.scss';
+import registerStyles from './Register.module.scss';
 
 const Registration = () => {
     return (
@@ -6,7 +6,7 @@ const Registration = () => {
             <iframe
                 className={`${registerStyles['registration-form']}`}
                 frameBorder='0'
-                height='2500px'
+                height='2400px'
                 scrolling='no'
                 src='https://www.ezone-us.com/en/registration-form'
                 width='100%'

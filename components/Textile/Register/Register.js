@@ -1,6 +1,6 @@
 import Registration from './Registration';
 
-import registerStyles from '../../styles/Register.module.scss';
+import registerStyles from './Register.module.scss';
 
 const Register = () => {
     return (
