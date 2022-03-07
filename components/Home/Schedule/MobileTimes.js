@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import timesStyles from '../../styles/Times.module.scss';
+import timesStyles from './Schedule.module.scss';
 
 const MobileTimes = ({ eastern, china }) => {
     const [isActive, setIsActive] = useState(false);
@@ -9,13 +9,21 @@ const MobileTimes = ({ eastern, china }) => {
         <>
             <div className={`${timesStyles['time-tabs']}`}>
                 <div
-                    className={`${timesStyles['time-tab']}`}
+                    className={
+                        isActive
+                            ? `${timesStyles['time-tab']}`
+                            : `${timesStyles['time-tab-inactive']}`
+                    }
                     onClick={() => setIsActive(!isActive)}
                 >
                     Eastern Standard Time
                 </div>
                 <div
-                    className={`${timesStyles['time-tab']}`}
+                    className={
+                        isActive
+                            ? `${timesStyles['time-tab']}`
+                            : `${timesStyles['time-tab-inactive']}`
+                    }
                     onClick={() => setIsActive(!isActive)}
                 >
                     China Standard Time

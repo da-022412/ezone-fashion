@@ -1,4 +1,4 @@
-import timesStyles from '../../styles/Times.module.scss';
+import timesStyles from './Schedule.module.scss';
 
 const Times = ({ eastern, china }) => {
     return (
