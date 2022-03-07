@@ -22,11 +22,11 @@ const Event = () => {
                     {CONTENT.title}
                 </Heading>
                 <BodyText>
-                    Doing business with Asia's best textile and apparel
+                    Doing business with Asia&apos;s best textile and apparel
                     manufacturers has never been easier! Now, you can meet
                     hundreds of the best of the best, from the comfort and
-                    safety of your office, at Ezone's first Virtual Textiles and
-                    Apparel Exhibition of 2022.
+                    safety of your office, at Ezone&apos;s first Virtual
+                    Textiles and Apparel Exhibition of 2022.
                 </BodyText>
                 <Image
                     src={CONTENT.image}
