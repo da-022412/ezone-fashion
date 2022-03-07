@@ -1,0 +1,25 @@
+@import '../../styles/partials/partials';
+
+.header {
+    background-color: #fff;
+    height: 105px;
+    position: relative;
+    width: 100%;
+}
+
+.header-container {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: $site-width;
+    padding: toRem(12) toRem(8);
+
+    @include md {
+        padding: toRem(12) toRem(8);
+        position: absolute;
+        width: 100%;
+        z-index: 999;
+    }
+}
