@@ -1,13 +1,10 @@
 import eventStyles from './Event.module.scss';
 
-import Img from '../../../assets/images/ezone-textile-virtual.jpg';
-
 import Heading from '../../Heading';
 import BodyText from '../../BodyText';
 
 const CONTENT = {
     title: 'March 22-24, 2022',
-    image: Img,
 };
 
 const Event = () => {
@@ -26,12 +23,15 @@ const Event = () => {
                     safety of your office, at Ezone&apos;s first Virtual
                     Textiles and Apparel Exhibition of 2022.
                 </BodyText>
-                <figure className={`${eventStyles['event-img']}`}>
-                    <img
-                        src='/images/ezone-textile-virtual.jpg'
-                        alt='Ezone Virtual Event'
-                    />
-                </figure>
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    className={`${eventStyles['event-video']}`}
+                    id='heroVideo'
+                >
+                    <source src='/videos/venue-exterior.mp4' type='video/mp4' />
+                </video>
             </section>
         </section>
     );
