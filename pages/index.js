@@ -1,5 +1,6 @@
 import Hero from '../components/Home/Hero';
 import Countdown from '../components/Home/Countdown';
+import Event from '../components/Home/Event';
 import Information from '../components/Home/Information';
 import Schedule from '../components/Home/Schedule';
 import Testimonials from '../components/Home/Testimonials';
@@ -22,6 +23,7 @@ export default function Home() {
             `}</style>
             <Hero />
             <Countdown />
+            <Event />
             <Information />
             <Schedule />
             <Testimonials />
