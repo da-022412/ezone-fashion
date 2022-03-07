@@ -1,16 +1,27 @@
 @import '../../../styles/partials/partials';
 
-.hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
-        url('../../../assets/images/enjoying-new-fit.jpg') center center/cover;
+.hero-container {
+    color: #fff;
+    margin: auto;
+    left: 50%;
+    max-width: $container-width;
     padding: toRem(200);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    z-index: 1010;
 
     @include lg {
         padding: toRem(200) 0 toRem(100);
     }
 
     @include md {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+            url('../../../assets/images/enjoying-new-fit.jpg') center center/cover;
+        position: static;
         padding: toRem(100) toRem(48);
+        transform: translate(0,0);
     }
 
     @include sm {
@@ -18,8 +29,8 @@
     }
 }
 
-.hero-container {
-    color: #fff;
-    margin: auto;
-    max-width: $container-width;
+.hero-video {
+    @include md {
+        display: none;
+    }
 }

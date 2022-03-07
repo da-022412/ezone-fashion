@@ -18,6 +18,18 @@ const Hero = () => {
                     Register
                 </Button>
             </div>
+            <video
+                autoPlay
+                muted
+                loop
+                className={`${heroStyles['hero-video']}`}
+                id='heroVideo'
+            >
+                <source
+                    src='/videos/ezone-virtual-video.mp4'
+                    type='video/mp4'
+                />
+            </video>
         </section>
     );
 };
