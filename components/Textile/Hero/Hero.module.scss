@@ -26,6 +26,7 @@
         position: static;
         padding: toRem(100) toRem(48);
         transform: translate(0,0);
+        width: auto;
     }
 
     @include sm {
@@ -34,6 +35,8 @@
 }
 
 .hero-video {
+    width: 100%;
+
     @include md {
         display: none;
     }
