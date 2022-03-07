@@ -1,4 +1,7 @@
-import heroStyles from '../../styles/Hero.module.scss';
+import heroStyles from './Hero.module.scss';
+
+import Heading from '../../Heading';
+import BodyText from '../../BodyText';
 
 const Hero = () => {
     return (
@@ -7,16 +10,16 @@ const Hero = () => {
                 className={`${heroStyles['hero-container']} ${heroStyles['text-center']}`}
             >
                 <div className={`${heroStyles['title-container']}`}>
-                    <h1 className={`${heroStyles['heading-1']}`}>
+                    <Heading level='1' style='heading-1'>
                         Meet our Manufacturers
-                    </h1>
-                    <p className={`${heroStyles['body-text']}`}>
+                    </Heading>
+                    <BodyText>
                         We’ve developed deep partnerships with the best
                         manufactururers from China and throughout the rest of
                         Asia, and their collective capabilities are extensive.
                         See below, to see all of our featured manufacturers in
                         key product categories.
-                    </p>
+                    </BodyText>
                 </div>
             </div>
         </section>
