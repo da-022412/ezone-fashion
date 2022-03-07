@@ -1,6 +1,6 @@
 import Script from 'next/script';
 
-import countdownStyles from '../../styles/Countdown.module.scss';
+import countdownStyles from './Countdown.module.scss';
 
 const Countdown = () => {
     return (
