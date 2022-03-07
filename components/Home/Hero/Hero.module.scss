@@ -1,8 +1,8 @@
-@import 'partials/partials';
+@import '../../../styles/partials/partials';
 
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
-        url('../assets/images/enjoying-new-fit.jpg') center center/cover;
+        url('../../../assets/images/enjoying-new-fit.jpg') center center/cover;
     padding: toRem(200);
 
     @include lg {

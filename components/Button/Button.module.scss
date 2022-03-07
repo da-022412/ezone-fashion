@@ -1,0 +1,26 @@
+@import '../../styles/partials/partials';
+
+.btn-container {
+    text-align: center;
+}
+
+.primary-btn,
+.secondary-btn {
+    border-radius: 100px;
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+    font-size: toRem(20);
+    font-weight: 600;
+    margin: toRem(16) auto;
+    padding: toRem(12) toRem(60);
+}
+
+.primary-btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.secondary-btn {
+    background-color: #fff;
+    color: #000;
+}
