@@ -5,40 +5,34 @@ import BodyText from '../../BodyText';
 
 import infoStyles from './Info.module.scss';
 
-import imageOne from '../../../assets/images/colored-thread-bulk.jpg';
-import imageTwo from '../../../assets/images/young-man-rain-coat.jpg';
-import imageThree from '../../../assets/images/shades-sundress.jpg';
-import imageFour from '../../../assets/images/upside-down-in-bathtub.jpg';
-import imageFive from '../../../assets/images/croc-skin-purse.jpg';
-
 const CONTENT = {
     icons: [
         {
-            img: imageOne,
+            img: '/images/colored-thread-bulk.jpg',
             width: 160,
             height: 160,
             title: 'Textile',
         },
         {
-            img: imageTwo,
+            img: '/images/young-man-rain-coat.jpg',
             width: 160,
             height: 160,
             title: 'Mens',
         },
         {
-            img: imageThree,
+            img: '/images/shades-sundress.jpg',
             width: 160,
             height: 160,
             title: 'Womens',
         },
         {
-            img: imageFour,
+            img: '/images/upside-down-in-bathtub.jpg',
             width: 160,
             height: 160,
             title: 'Shoes',
         },
         {
-            img: imageFive,
+            img: '/images/croc-skin-purse.jpg',
             width: 160,
             height: 160,
             title: 'Accessories',

@@ -18,3 +18,12 @@
     max-width: 90%;
     width: $container-width;
 }
+
+.event-img {
+    margin: auto;
+    width: 100%;
+
+    img {
+        max-width: 100%;
+    }
+}

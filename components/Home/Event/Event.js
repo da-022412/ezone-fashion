@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import eventStyles from './Event.module.scss';
 
 import Img from '../../../assets/images/ezone-textile-virtual.jpg';
@@ -28,12 +26,12 @@ const Event = () => {
                     safety of your office, at Ezone&apos;s first Virtual
                     Textiles and Apparel Exhibition of 2022.
                 </BodyText>
-                <Image
-                    src={CONTENT.image}
-                    width={1677}
-                    height={921}
-                    alt='Ezone Virtual Event'
-                />
+                <figure className={`${eventStyles['event-img']}`}>
+                    <img
+                        src='/images/ezone-textile-virtual.jpg'
+                        alt='Ezone Virtual Event'
+                    />
+                </figure>
             </section>
         </section>
     );

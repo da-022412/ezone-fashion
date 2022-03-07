@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import iconStyles from './Info.module.scss';
 
 const Icons = ({ items }) => {
@@ -8,7 +6,7 @@ const Icons = ({ items }) => {
             {items.map(({ img, width, height, title }, index) => (
                 <div className={`${iconStyles['icons-container']}`} key={index}>
                     <figure className={`${iconStyles['icon-container']}`}>
-                        <Image
+                        <img
                             src={img}
                             width={width}
                             height={height}
