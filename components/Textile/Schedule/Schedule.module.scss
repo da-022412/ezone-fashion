@@ -1,0 +1,88 @@
+@import '../../../styles/partials/partials';
+
+.schedule-section {
+    padding: toRem(72) 0;
+
+    @include md {
+        padding: toRem(48) toRem(0);
+    }
+}
+
+.schedule-container {
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 90%;
+    width: $site-width;
+}
+
+.times-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: toRem(72) auto;
+}
+
+.time-container {
+    background-color: #f3f3f3;
+    border-radius: 100px;
+    padding: toRem(100) toRem(40);
+    transform: translate(20px, -20px);
+
+    @include sm {
+        border-radius: 40px;
+        padding: toRem(40);
+    }
+}
+
+.time {
+    background: url('../../../assets/images/times-abstract-bg.jpg');
+    border-radius: 100px;
+    box-sizing: border-box;
+    width: 50%;
+
+    &:first-of-type {
+        margin-right: toRem(36);
+    }
+
+    &:last-of-type {
+        margin-left: toRem(36);
+    }
+
+    @include sm {
+        border-radius: 40px;
+        width: 95%;
+
+        &:first-of-type {
+            margin-right: 0;
+        }
+
+        &:last-of-type {
+            margin-left: 0;
+        }
+    }
+}
+
+.time-list {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.time-tabs {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-bottom: toRem(60);
+    padding: 0;
+}
+
+.time-tab,
+.time-tab-inactive {
+    border: 1px solid #000;
+    border-radius: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: toRem(12);
+    font-weight: 500;
+    padding: toRem(16);
+}
