@@ -1,19 +1,19 @@
 import heroStyles from './Hero.module.scss';
 
-import Title from './Title';
+import Heading from '../../Heading';
 import Button from '../../Button';
 
-const CONTENT = {
-    title: 'Ezone Virtual<br>Textile Exhibition',
-};
-
-const Hero = () => {
+const Hero = ({ content }) => {
     return (
         <section className={heroStyles.hero}>
             <div
                 className={`${heroStyles['hero-container']} ${heroStyles['text-center']}`}
             >
-                <Title content={CONTENT} />
+                <div className={`${heroStyles['title-container']}`}>
+                    <Heading level='1' style='heading-1'>
+                        {content.title}
+                    </Heading>
+                </div>
                 <Button style='primary-btn' link='#register'>
                     Register
                 </Button>
@@ -25,10 +25,7 @@ const Hero = () => {
                 className={`${heroStyles['hero-video']}`}
                 id='heroVideo'
             >
-                <source
-                    src='/videos/ezone-virtual-video.mp4'
-                    type='video/mp4'
-                />
+                <source src={content.video} type='video/mp4' />
             </video>
         </section>
     );

@@ -5,6 +5,7 @@ import BodyText from '../../BodyText';
 
 const CONTENT = {
     title: 'March 22-24, 2022',
+    copy: 'Doing business with Asia&apos;s best textile and apparel manufacturers has never been easier! Now, you can meet hundreds of the best of the best, from the comfort and safety of your office, at Ezone&apos;s first Virtual Textiles and Apparel Exhibition of 2022.',
 };
 
 const Event = () => {
@@ -16,13 +17,7 @@ const Event = () => {
                 <Heading level='2' style='heading-2'>
                     {CONTENT.title}
                 </Heading>
-                <BodyText>
-                    Doing business with Asia&apos;s best textile and apparel
-                    manufacturers has never been easier! Now, you can meet
-                    hundreds of the best of the best, from the comfort and
-                    safety of your office, at Ezone&apos;s first Virtual
-                    Textiles and Apparel Exhibition of 2022.
-                </BodyText>
+                <BodyText>{CONTENT.copy}</BodyText>
                 <video
                     autoPlay
                     muted
