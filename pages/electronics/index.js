@@ -38,10 +38,10 @@ const CONTENT = {
         video: '/videos/ezone-virtual-electronics.mp4',
     },
     countdown: {
-        date: 'Mar 21, 2022 23:59:59',
+        date: 'Apr 25, 2022 23:59:59',
     },
     event: {
-        title: 'March 22-24, 2022',
+        title: 'April 26-28, 2022',
         copy: 'Doing business with Asia’s best electronics manufacturers has never been easier!  Now you can meet hundreds of the best of the best, from the comfort and safety of your office, at Ezone’s first Virtual Electronic Products Exhibition of 2022.',
     },
     info: {
