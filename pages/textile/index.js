@@ -1,11 +1,11 @@
-import Hero from '../../components/Textile/Hero';
-import Countdown from '../../components/Textile/Countdown';
-import Event from '../../components/Textile/Event';
-import Information from '../../components/Textile/Information';
-import Schedule from '../../components/Textile/Schedule';
-import Testimonials from '../../components/Textile/Testimonials';
-import About from '../../components/Textile/About';
-import Register from '../../components/Textile/Register';
+import Hero from '../../components/Hero';
+import Countdown from '../../components/Countdown';
+import Event from '../../components/Event';
+import Information from '../../components/Information';
+import Schedule from '../../components/Schedule';
+import Testimonials from '../../components/Testimonials';
+import About from '../../components/About';
+import Register from '../../components/Register';
 
 export default function Textile() {
     return (
