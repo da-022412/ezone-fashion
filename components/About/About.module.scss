@@ -1,0 +1,27 @@
+@import '../../styles/partials/partials';
+
+.about-section {
+    background-color: #f3f3f3;
+    padding: toRem(72) 0;
+
+    @include md {
+        overflow: hidden;
+        padding: toRem(48) toRem(0);
+    }
+}
+
+.about-container {
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 90%;
+    width: $site-width;
+}
+
+.title-container {
+    margin: auto;
+    max-width: $container-width;
+
+    @include md {
+        margin-bottom: toRem(64);
+    }
+}

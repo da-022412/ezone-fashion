@@ -1,0 +1,29 @@
+@import '../../styles/partials/partials';
+
+.event-section {
+    padding: 0 0 toRem(72);
+
+    @include md {
+        padding: toRem(100) toRem(48);
+    }
+
+    @include sm {
+        padding: 0 toRem(20) toRem(48);
+    }
+}
+
+.event-container {
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 90%;
+    width: $container-width;
+}
+
+.event-video {
+    margin: auto;
+    width: 100%;
+
+    video {
+        max-width: 100%;
+    }
+}

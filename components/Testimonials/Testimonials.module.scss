@@ -1,0 +1,44 @@
+@import '../../styles/partials/partials';
+
+.testimonials-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../../assets/images/abstract-color-fabric.jpg') center center/cover;
+    padding: toRem(100) 0;
+
+    @include md {
+        padding: toRem(60) toRem(0);
+    }
+}
+
+.testimonials-container {
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 90%;
+    width: $site-width;
+}
+
+.title-container {
+    color: #fff;
+    margin: auto;
+    max-width: $site-width;
+}
+
+.testimonials {
+    display: grid;
+    grid-gap: toRem(16);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+    @include md {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+.testimonial {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: toRem(32);
+}
