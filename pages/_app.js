@@ -4,6 +4,8 @@ import Head from 'next/head';
 
 import Layout from '../components/Layout';
 
+import '../styles/reset.css';
+
 function MyApp({ Component, pageProps }) {
     return (
         <>

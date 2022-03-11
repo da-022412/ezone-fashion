@@ -76,6 +76,48 @@ const CONTENT = {
                 height: 160,
                 title: 'DVD Players',
             },
+            {
+                img: '/images/video.jpg',
+                width: 160,
+                height: 160,
+                title: 'Video',
+            },
+            {
+                img: '/images/camcorder.jpg',
+                width: 160,
+                height: 160,
+                title: 'Camcorders',
+            },
+            {
+                img: '/images/radio.jpg',
+                width: 160,
+                height: 160,
+                title: 'Radios',
+            },
+            {
+                img: '/images/speakers.jpg',
+                width: 160,
+                height: 160,
+                title: 'Speakers',
+            },
+            {
+                img: '/images/computer.jpg',
+                width: 160,
+                height: 160,
+                title: 'Computers',
+            },
+            {
+                img: '/images/comms.jpg',
+                width: 160,
+                height: 160,
+                title: 'Communications',
+            },
+            {
+                img: '/images/gaming.jpg',
+                width: 160,
+                height: 160,
+                title: 'Gaming',
+            },
         ],
         title: 'Access the EZone Network',
         topCopy: [

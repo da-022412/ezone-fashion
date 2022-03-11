@@ -37,7 +37,8 @@
         content: ':';
         position: absolute;
         right: -100%;
-        top: 50%;
+        top: 60%;
+        transform: translate(-50%, -50%);
 
         @include md {
             right: -60%;
