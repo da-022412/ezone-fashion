@@ -16,7 +16,6 @@ export default function Textile() {
                     margin: 0;
                     max-width: 100vw;
                     min-height: 100vh;
-                    overflow-x: hidden;
                     padding: 0;
                     scroll-behavior: smooth;
                 }

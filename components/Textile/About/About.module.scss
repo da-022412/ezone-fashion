@@ -5,6 +5,7 @@
     padding: toRem(72) 0;
 
     @include md {
+        overflow: hidden;
         padding: toRem(48) toRem(0);
     }
 }
