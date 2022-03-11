@@ -33,45 +33,7 @@ const useMediaQuery = (width) => {
     return targetReached;
 };
 
-const CONTENT = {
-    eastern: [
-        {
-            id: 0,
-            date: '03/22/22',
-            content: '08:30 am - 17:30 pm',
-        },
-        {
-            id: 1,
-            date: '03/23/22',
-            content: '08:30 am - 17:30 pm',
-        },
-        {
-            id: 2,
-            date: '03/24/22',
-            content: '08:30 am - 17:30 pm',
-        },
-    ],
-
-    china: [
-        {
-            id: 0,
-            date: '03/22/22',
-            content: '20:30 pm - 05:30 am',
-        },
-        {
-            id: 1,
-            date: '03/23/22',
-            content: '20:30 pm - 05:30 am',
-        },
-        {
-            id: 2,
-            date: '03/24/22',
-            content: '20:30 pm - 05:30 am',
-        },
-    ],
-};
-
-const Schedule = () => {
+const Schedule = ({ content }) => {
     const isBreakpoint = useMediaQuery(767);
     return (
         <section
@@ -88,11 +50,14 @@ const Schedule = () => {
                 </div>
                 {isBreakpoint ? (
                     <MobileTimes
-                        eastern={CONTENT.eastern}
-                        china={CONTENT.china}
+                        eastern={content.time.eastern}
+                        china={content.time.china}
                     />
                 ) : (
-                    <Times eastern={CONTENT.eastern} china={CONTENT.china} />
+                    <Times
+                        eastern={content.time.eastern}
+                        china={content.time.china}
+                    />
                 )}
             </div>
         </section>
