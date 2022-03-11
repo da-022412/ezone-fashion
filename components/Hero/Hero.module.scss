@@ -9,16 +9,11 @@
     margin: auto;
     left: 50%;
     max-width: $container-width;
-    padding: toRem(200);
     position: absolute;
     top: 50%;
     transform: translate(-50%,-50%);
     width: 100%;
     z-index: 1010;
-
-    @include lg {
-        padding: toRem(200) 0 toRem(100);
-    }
 
     @include md {
         background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
