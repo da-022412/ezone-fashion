@@ -49,15 +49,9 @@ const Schedule = ({ content }) => {
                     </Heading>
                 </div>
                 {isBreakpoint ? (
-                    <MobileTimes
-                        eastern={content.time.eastern}
-                        china={content.time.china}
-                    />
+                    <MobileTimes content={content.time} />
                 ) : (
-                    <Times
-                        eastern={content.time.eastern}
-                        china={content.time.china}
-                    />
+                    <Times content={content.time} />
                 )}
             </div>
         </section>

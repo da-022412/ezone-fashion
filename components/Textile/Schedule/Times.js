@@ -1,6 +1,6 @@
 import timesStyles from './Schedule.module.scss';
 
-const Times = ({ eastern, china }) => {
+const Times = ({ content }) => {
     return (
         <div className={`${timesStyles['times-container']}`}>
             <div className={timesStyles.time}>
@@ -10,16 +10,16 @@ const Times = ({ eastern, china }) => {
                             Eastern Standard Time
                         </h3>
                     </div>
-                    {eastern.map((x) => (
+                    {content.eastern.map(({ date, content }, index) => (
                         <div
                             className={`${timesStyles['time-list']}`}
-                            key={x.id}
+                            key={index}
                         >
                             <span className={`${timesStyles['body-text']}`}>
-                                {x.date}
+                                {date}
                             </span>
                             <span className={`${timesStyles['body-text']}`}>
-                                {x.content}
+                                {content}
                             </span>
                         </div>
                     ))}
@@ -32,16 +32,16 @@ const Times = ({ eastern, china }) => {
                             China Standard Time
                         </h3>
                     </div>
-                    {china.map((x) => (
+                    {content.china.map(({ date, content }, index) => (
                         <div
                             className={`${timesStyles['time-list']}`}
-                            key={x.id}
+                            key={index}
                         >
                             <span className={`${timesStyles['body-text']}`}>
-                                {x.date}
+                                {date}
                             </span>
                             <span className={`${timesStyles['body-text']}`}>
-                                {x.content}
+                                {content}
                             </span>
                         </div>
                     ))}

@@ -93,17 +93,14 @@ const CONTENT = {
         time: {
             eastern: [
                 {
-                    id: 0,
                     date: '03/22/22',
                     content: '08:30 am - 17:30 pm',
                 },
                 {
-                    id: 1,
                     date: '03/23/22',
                     content: '08:30 am - 17:30 pm',
                 },
                 {
-                    id: 2,
                     date: '03/24/22',
                     content: '08:30 am - 17:30 pm',
                 },
@@ -111,17 +108,14 @@ const CONTENT = {
 
             china: [
                 {
-                    id: 0,
                     date: '03/22/22',
                     content: '20:30 pm - 05:30 am',
                 },
                 {
-                    id: 1,
                     date: '03/23/22',
                     content: '20:30 pm - 05:30 am',
                 },
                 {
-                    id: 2,
                     date: '03/24/22',
                     content: '20:30 pm - 05:30 am',
                 },
