@@ -1,6 +1,7 @@
 import heroStyles from './Hero.module.scss';
 
 import Heading from '../Heading';
+import BodyText from '../BodyText';
 import Button from '../Button';
 
 const Hero = ({ content }) => {
@@ -18,6 +19,7 @@ const Hero = ({ content }) => {
                             {content.subtitle}
                         </Heading>
                     ) : null}
+                    {content.copy ? <BodyText>{content.copy}</BodyText> : null}
                 </div>
                 <Button style='primary-btn' link='#register'>
                     Register
