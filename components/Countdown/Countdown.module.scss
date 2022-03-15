@@ -10,8 +10,10 @@
     margin: 0 auto;
     max-width: 100%;
     padding: toRem(32) toRem(60);
+    position: relative;
     transform: translate(0, -50%);
     width: $container-width;
+    z-index: 1050;
 
     @include md {
         margin: 0 toRem(16);
