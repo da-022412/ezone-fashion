@@ -19,7 +19,11 @@ const Hero = ({ content }) => {
                             {content.subtitle}
                         </Heading>
                     ) : null}
-                    {content.copy ? <BodyText>{content.copy}</BodyText> : null}
+                    {content.copy ? (
+                        <Heading level='4' style='heading-4'>
+                            {content.copy}
+                        </Heading>
+                    ) : null}
                 </div>
                 <Button style='primary-btn' link='#register'>
                     Register
