@@ -13,6 +13,11 @@ const Hero = ({ content }) => {
                     <Heading level='1' style='heading-1'>
                         {content.title}
                     </Heading>
+                    {content.subtitle ? (
+                        <Heading level='3' style='heading-3'>
+                            {content.subtitle}
+                        </Heading>
+                    ) : null}
                 </div>
                 <Button style='primary-btn' link='#register'>
                     Register
