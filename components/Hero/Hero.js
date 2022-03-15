@@ -1,7 +1,6 @@
 import heroStyles from './Hero.module.scss';
 
 import Heading from '../Heading';
-import BodyText from '../BodyText';
 import Button from '../Button';
 
 const Hero = ({ content }) => {
