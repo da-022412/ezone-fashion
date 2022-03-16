@@ -96,30 +96,30 @@ const CONTENT = {
             eastern: [
                 {
                     date: '03/22/22',
-                    content: '08:30 am - 17:30 pm',
+                    content: '08:30 am - 05:30 pm',
                 },
                 {
                     date: '03/23/22',
-                    content: '08:30 am - 17:30 pm',
+                    content: '08:30 am - 05:30 pm',
                 },
                 {
                     date: '03/24/22',
-                    content: '08:30 am - 17:30 pm',
+                    content: '08:30 am - 05:30 pm',
                 },
             ],
 
             china: [
                 {
                     date: '03/22/22',
-                    content: '20:30 pm - 05:30 am',
+                    content: '08:30 pm - 05:30 am',
                 },
                 {
                     date: '03/23/22',
-                    content: '20:30 pm - 05:30 am',
+                    content: '08:30 pm - 05:30 am',
                 },
                 {
                     date: '03/24/22',
-                    content: '20:30 pm - 05:30 am',
+                    content: '08:30 pm - 05:30 am',
                 },
             ],
         },
