@@ -2,13 +2,6 @@
 
 .header {
     background-color: #fff;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    height: 105px;
-    left: 0;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1090;
 }
 
 .header-container {
@@ -22,8 +15,5 @@
 
     @include md {
         padding: toRem(12) toRem(8);
-        position: absolute;
-        width: 100%;
-        z-index: 999;
     }
 }

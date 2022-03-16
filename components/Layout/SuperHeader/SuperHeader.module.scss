@@ -1,0 +1,36 @@
+@import '../../../styles/partials/partials';
+
+.super-header {
+    left: 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1090;
+}
+
+.super-header-text {
+    background-color: #2e82ff;
+    display: block;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: toRem(20);
+    font-weight: 400;
+    line-height: toRem(36);
+    margin: 0;
+
+    @include md {
+        font-size: toRem(16);
+    }
+
+    a {
+        color: #fff;
+
+        :visited {
+            color: inherit
+        }
+
+        :hover {
+            color: inherit;
+        }
+    }
+}

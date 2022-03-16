@@ -1,6 +1,7 @@
 import { Fragment, useState, useCallback, useEffect } from 'react';
 import Head from 'next/head';
 
+import SuperHeader from './SuperHeader';
 import Header from './Header';
 import MobileHeader from './MobileHeader';
 
@@ -62,6 +63,7 @@ const Layout = ({ children }) => {
                 <meta name='description' content='E-Zone US' />
                 <link rel='icon' href='/favicon.ico' />
             </Head>
+            <SuperHeader />
             {isBreakpoint ? (
                 <MobileHeader links={links} />
             ) : (
