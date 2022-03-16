@@ -2,6 +2,12 @@
 
 .header {
     background-color: #fff;
+
+    @include md {
+        height: 100%;
+        position: relative;
+        z-index: 1060;
+    }
 }
 
 .header-container {
@@ -14,6 +20,8 @@
     padding: toRem(12) toRem(8);
 
     @include md {
-        padding: toRem(12) toRem(8);
+        height: 100%;
+        position: relative;
+        z-index: 1070;
     }
 }
