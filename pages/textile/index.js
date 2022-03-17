@@ -1,3 +1,4 @@
+import Modal from '../../components/Modal';
 import Hero from '../../components/Hero';
 import Countdown from '../../components/Countdown';
 import Event from '../../components/Event';
@@ -20,6 +21,7 @@ export default function Textile() {
                     scroll-behavior: smooth;
                 }
             `}</style>
+            <Modal />
             <Hero content={CONTENT.hero} />
             <Countdown content={CONTENT.countdown} />
             <Event content={CONTENT.event} />
