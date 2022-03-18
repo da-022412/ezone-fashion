@@ -2,7 +2,7 @@
 
 .testimonials-section {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('../../assets/images/abstract-color-fabric.jpg') center center/cover;
+        url('/images/abstract-color-fabric.webp') center center/cover;
     padding: toRem(100) 0;
 
     @include md {

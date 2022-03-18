@@ -51,31 +51,31 @@ const CONTENT = {
     info: {
         icons: [
             {
-                img: '/images/colored-thread-bulk.jpg',
+                img: '/images/colored-thread-bulk.webp',
                 width: 160,
                 height: 160,
                 title: 'Textile',
             },
             {
-                img: '/images/young-man-rain-coat.jpg',
+                img: '/images/young-man-rain-coat.webp',
                 width: 160,
                 height: 160,
                 title: 'Mens',
             },
             {
-                img: '/images/shades-sundress.jpg',
+                img: '/images/shades-sundress.webp',
                 width: 160,
                 height: 160,
                 title: 'Womens',
             },
             {
-                img: '/images/upside-down-in-bathtub.jpg',
+                img: '/images/upside-down-in-bathtub.webp',
                 width: 160,
                 height: 160,
                 title: 'Shoes',
             },
             {
-                img: '/images/croc-skin-purse.jpg',
+                img: '/images/croc-skin-purse.webp',
                 width: 160,
                 height: 160,
                 title: 'Accessories',
