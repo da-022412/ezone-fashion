@@ -16,7 +16,7 @@ const Modal = () => {
     useEffect(() => {
         const timeout = setTimeout(() => {
             setIsActive(true);
-        }, 5000);
+        }, 3000);
     }, []);
 
     return (
