@@ -10,6 +10,10 @@ import Heading from '../Heading';
 import Button from '../Button';
 import BodyText from '../BodyText';
 
+import imgOne from '../../assets/images/vacation.webp';
+import imgTwo from '../../assets/images/mexico.webp';
+import imgThree from '../../assets/images/sunscape.webp';
+
 const Modal = () => {
     const [isActive, setIsActive] = useState(false);
 
@@ -29,22 +33,42 @@ const Modal = () => {
                     >
                         <Image src={Close} width={24} height={24} alt='Close' />
                     </a>
-                    <Heading level='6' style='heading-6'>
-                        Registration Special
-                    </Heading>
-                    <Heading level='3' style='heading-3'>
-                        Register in the next 24 hours
-                    </Heading>
                     <div className={`${modalStyles['modal-container']}`}>
-                        <BodyText>
-                            and be entered to recieve a 7-day dream vacation
-                            certificate
-                        </BodyText>
-                        <a onClick={() => setIsActive(!isActive)}>
-                            <Button style='primary-btn' link='#register'>
-                                Register
-                            </Button>
-                        </a>
+                        <div className={`${modalStyles['modal-content']}`}>
+                            <Heading level='6' style='heading-6'>
+                                Registration Special
+                            </Heading>
+                            <h3>
+                                <span>Register in the next 24 hours</span> and
+                                be entered to recieve a 7-day dream vacation
+                                certificate
+                            </h3>
+                            <a onClick={() => setIsActive(!isActive)}>
+                                <Button style='primary-btn' link='#register'>
+                                    Register
+                                </Button>
+                            </a>
+                        </div>
+                        <div className={`${modalStyles['modal-images']}`}>
+                            <Image
+                                src={imgOne}
+                                height={215}
+                                width={600}
+                                alt='Vacation'
+                            />
+                            <Image
+                                src={imgTwo}
+                                height={215}
+                                width={600}
+                                alt='Vacation'
+                            />
+                            <Image
+                                src={imgThree}
+                                height={215}
+                                width={600}
+                                alt='Vacation'
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
