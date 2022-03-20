@@ -1,9 +1,18 @@
+import React, { useEffect, useRef } from 'react';
+
 import heroStyles from './Hero.module.scss';
 
 import Heading from '../Heading';
 import Button from '../Button';
 
 const Hero = ({ content }) => {
+    const videoRef = useRef(null);
+    useEffect(() => {
+        if (videoRef) {
+            videoRef.current.play();
+        }
+    }, []);
+
     return (
         <>
             <section className={heroStyles.hero}>
@@ -34,6 +43,7 @@ const Hero = ({ content }) => {
                     muted
                     loop
                     className={`${heroStyles['hero-video']}`}
+                    ref={videoRef}
                     id='heroVideo'
                 >
                     <source src={content.video} type='video/mp4' />

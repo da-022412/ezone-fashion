@@ -1,9 +1,18 @@
+import React, { useEffect, useRef } from 'react';
+
 import eventStyles from './Event.module.scss';
 
 import Heading from '../Heading';
 import BodyText from '../BodyText';
 
 const Event = ({ content }) => {
+    const videoRef = useRef(null);
+    useEffect(() => {
+        if (videoRef) {
+            videoRef.current.play();
+        }
+    }, []);
+
     return (
         <section className={`${eventStyles['event-section']}`}>
             <section
@@ -18,6 +27,7 @@ const Event = ({ content }) => {
                     muted
                     loop
                     className={`${eventStyles['event-video']}`}
+                    ref={videoRef}
                     id='heroVideo'
                 >
                     <source src='/videos/venue-exterior.mp4' type='video/mp4' />
