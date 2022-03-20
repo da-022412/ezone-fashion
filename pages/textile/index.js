@@ -37,8 +37,6 @@ export default function Textile() {
 const CONTENT = {
     hero: {
         title: 'Ezone Virtual<br>Textile Exhibition',
-        subtitle: 'Pre-Register Now for Early Access',
-        copy: 'Register Before March 21st and Gain Entry 3 Hours Prior to the General Public',
         video: '/videos/ezone-virtual-video.mp4',
     },
     countdown: {
