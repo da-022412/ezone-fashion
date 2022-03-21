@@ -39,9 +39,8 @@ const Modal = () => {
                                 Registration Special
                             </Heading>
                             <h3>
-                                <span>Register in the next 24 hours</span> and
-                                be entered to recieve a 7-day dream vacation
-                                certificate
+                                <span>Register today</span> and be entered into
+                                winning your choice of 1 of 3 amazing vacations.
                             </h3>
                             <a onClick={() => setIsActive(!isActive)}>
                                 <Button style='primary-btn' link='#register'>
